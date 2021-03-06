@@ -10,8 +10,129 @@
   <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/c09da6029c.js" crossorigin="anonymous"></script>
   <!-- Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+  <header class="site_header">
+    <div class="header_sns_icons">
+      <ul>
+        <li><a href=""><svg 
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="13px" height="22px">
+         <image  x="0px" y="0px" width="13px" height="22px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAWCAMAAAAsJOYWAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABNVBMVEW/pETApETApUTApUXApETApUXApUTApUS/pETApUTApETApETApUTApUTApES/pETApETApUXApES/pES/pETApUW/pETApETApUW/pETApETApUTApUTApUTApETApUXApUW/pETApUXApUXApETApUXApUW/pES/pES/pETApETApES/pETApETApUTApUXApETApUS/pETApUTApUW/pES/pETApETApUTApUTApUTApETApES/pETApETApETApETApES/pETApUTApES/pETApETApUS/pETApETApUTApETApES/pETApUXApUS/pETApETApETApUXApUXApUXApUTApUTApETApUW/pES/pETApUTApETApETApETApUTApETApETApUTApUW/pET///8/u4QYAAAAYnRSTlMAAAAAAQICASOGsbSpFwIt4vgfAab9/fYT6/7EpJkUKOkWAR/54QgCEF2A/O9xYmIRI/EZIfTWCSDs+/34+b0GHEP65jAeI/njDynkFSkV5BUpKvnkKhUr6Rcm2d7fxRMQAzLCSsYAAAABYktHRGYs1NklAAAAB3RJTUUH5QMFCwgldasb3QAAAQNJREFUGNMdj+dSwlAQRr/dG4mKRiFiwUpEwd67EbsiKPZecDf3/V/BizP7Z+d8c2YOQPCI2RDaUh6IfG7v6Eynu7opgO9xT6+oaCZrUggp7JNcfyIDWTiGwSHN54ZHRsc8Hz6PZ0QnCqAo8GDMZFF0apq4lIpQnpmdE51fWFxaRgkreWtVrSSra86yvpEkic2rbm454/bOrrWytx8fEEJUDo+O1Z6cnhUMhQCfX0hyWSUCEwxfxWprdbCBQ3RdtFK7MS6G/j+Rxi0Z1wUPd7FKrc5MxG56/6DyWHe51LqnWLXxDLRQgBer9vWNI+OYT+8fn1/fPxSyc4Z+UG02y79+BMYfEtsrttlZAiUAAAAASUVORK5CYII=" />
+         </svg></a></li>
+        <li><a href=""><svg 
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="21px" height="21px">
+         <image  x="0px" y="0px" width="21px" height="21px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAMAAACeyVWkAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABfVBMVEXApUTApUXApES/pETApES/pETApETApUXApUTApES/pETApUXApES/pETApUS/pETApES/pETApETApETApUXApUXApETApETApES/pETApUXApUTApES/pETApES/pETApETApES/pETApUW/pETApES/pES/pETApUS/pES/pETApUTApUXApETApETApETApUXApETApUXApETApETApES/pETApUXApETApUS/pETApES/pES/pETApETApETApUS/pETApETApUW/pES/pETApETApUTApUTApETApUTApETApUTApUXApUW/pETApUXApUXApETApES/pETApETApES/pETApUS/pETApUXApES/pES/pETApUS/pETApUTApUTApUTApUW/pETApUW/pETApUXApUTApES/pETApETApUW/pETApETApETApETApUTApETApES/pETApETApUXApUW/pES/pETApUTApETApUW/pET///+imW71AAAAenRSTlMAAAAAAQICAgEEAzVKLAQrDyi4+vOaJFR6CQPAsQQV2/716WkbE9a3A4a+JwjE7XQdutkuXuqga0aMDT39/nsIxuj9/mBy9ysHov7MBRuY8f1k688KWvT1OwEBI4HqazOf9f35ZS58q9fDPwMJOpTb8/fkpE5BTUAvE5w8aWkAAAABYktHRH4/uEFzAAAAB3RJTUUH5QMFCwkTowq/BQAAAW9JREFUGNMVUYlWFDEQrHTHMK6yijd4RUBRARUFzx2PQQUWQTxAZgUPBDzxPjvJv9upvLyXzqtKp6pht7kuGEOAKUBMprBssB1oaMFAwW7Hzm4wTBO8azcpMrlnz17Zt//AwUO96Dt85CgRDPGx4yF6iSf6BwZx8pQM9QCnrTkjMSTd/WeHMTIqcu78BX16LAYJiouXAIyLyiYuX7k6mjKCXDN9uH5jyHsvEmJLeT6V4SYVuHX7TiVKiVktYbJMd40F7iUtU14x6jHdn2ILOz1ThTKXmduOafYBLBzm5h9WXpkhpbjQkkdQxw10P5b2gqg6ptgOT56SYTiHxaUQy9xKLTxbJmZG3WF6vrIqk76sSqleUM4Nhqnz8tXrsuXXfHqzjq4i57ex+fZdCmvqIoT3H4z76DRlfNr6/OWruvj2/cfPJte1VQsGIDSHf/3+8/cf5XmQfktBHUJuy3k8OWhQvqfCukbtahXpR/OsmP4DgrpftCxLK6AAAAAASUVORK5CYII=" />
+         </svg></a></li>
+        <li><a href=""><svg 
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="26px" height="21px">
+         <path fill-rule="evenodd"  stroke-width="1px" stroke="rgb(191, 163, 76)" fill="rgb(191, 163, 76)"
+          d="M21.312,3.500 L4.688,3.500 C4.032,3.500 3.500,4.022 3.500,4.667 L3.500,16.333 C3.500,16.978 4.032,17.500 4.688,17.500 L21.312,17.500 C21.968,17.500 22.500,16.978 22.500,16.333 L22.500,4.667 C22.500,4.022 21.968,3.500 21.312,3.500 ZM20.719,4.667 L13.000,12.250 L5.281,4.667 L20.719,4.667 ZM21.312,16.333 L4.688,16.333 L4.688,5.833 L13.000,14.000 L21.312,5.833 L21.312,16.333 Z"/>
+         </svg></a></li>
+      </ul>
+    </div><!-- header_sns_icons -->
+    <h1><img src="images/logo.png" alt="site logo"></h1>
+    <div class="header_nav">
+      <ul>
+        <li><a href="">WEB</a></li>
+        <li><a href="">LIFE</a></li>
+        <li><a href="">キャリア</a></li>
+        <li><a href="">旅</a></li>
+        <li><a href="">マーケティング</a></li>
+        <li><a href="">DevRel</a></li>
+        <li><a href="">英語</a></li>
+      </ul>
+    </div><!-- header_nav -->
+  </header><!-- site_header -->
+
+  <main>
+    <section class="main_visual">
+     <div class="main_visual_left">
+      <img src="images/main-left-img.png" alt="">
+      <img src="images/prev-icon.png" alt="">
+     </div><!-- main_visual_left -->
+     <div class="main_visual_center">
+      <img src="images/main-visual-img.png" alt="">
+     </div><!-- main_visual_center -->
+     <div class="main_visual_right">
+      <img src="images/main-right-img.png" alt="">
+      <img src="images/next-icon.png" alt="">
+     </div><!-- main_visual_right -->
+    </section><!-- main_visual -->
+
+    <section class="contents">
+      <div class="articles">
+        <article>
+          <div class="article">
+            <dl>
+              <dt><img src="images/thumbnail01.png" alt=""><img src="images/new.png" alt=""></dt>
+              <dd>
+                <p class="date">2016.01.01 FRI</p>
+                <h3>フォントを擬人化して、そのデザインがもつ雰囲気を再発見してみた（欧文編）</h3>
+                <div class="article_badge">WEB</div>
+              </dd>
+            </dl>
+          </div><!-- article -->
+          <div class="article">
+            <dl>
+              <dt><img src="images/thumbnail02.png" alt=""><img src="images/new.png" alt=""></dt>
+              <dd>
+                <p class="date">2016.01.01 FRI</p>
+                <h3>プレゼントにも最適！デザインが秀逸な焼酎ボトルコレクション</h3>
+                <div class="article_badge">LIFE</div>
+              </dd>
+            </dl>
+          </div><!-- article -->
+          <div class="article">
+            <dl>
+              <dt><img src="images/thumbnail03.png" alt=""><img src="images/new.png" alt=""></dt>
+              <dd>
+                <p class="date">2016.01.01 FRI</p>
+                <h3>『このマンガがすごい！ 2016』に入っててほしい漫画超個人的5選</h3>
+                <div class="article_badge">漫画</div>
+              </dd>
+            </dl>
+          </div><!-- article -->
+        </article>
+      </div><!-- articles -->
+      <div class="side_bar">
+        <img src="images/sidebar-banner.png" alt="">
+        <div class="categories">
+          <h2>カテゴリ一覧</h2>
+          <ul>
+            <li><a href="">すべて</a></li>
+            <li><a href="">殿堂入り</a></li>
+            <li><a href="">おもしろ</a></li>
+            <li><a href="">web制作</a></li>
+            <li><a href="">ライフスタイル</a></li>
+            <li><a href="">ニュース</a></li>
+          </ul>
+        </div><!-- categories -->
+      </div><!-- side_bar -->
+    </section><!-- contents -->
+  </main>
+
+  <footer class="site_footer">
+    <div class="footer_info">
+      <h2><img src="images/logo.png" alt=""></h2>
+      <p>株式会社LIG　TEL : 03-6240-1253<br>
+        〒110-0015 東京都台東区東上野2-18-7 共同ビル 10F</p>
+    </div><!-- footer_info -->
+    <nav class="footer_nav">  
+      <ul>
+        <li><a href="">プライバシーポリシー</a></li>
+        <li><a href="">メディア・広告掲載について</a></li>
+        <li><a href="">サイトマップ</a></li>
+      </ul>
+    </nav><!-- footer_nav -->
+    <small>© 2006-2015 LIG INC.</small>
+  </footer><!-- site_footer -->
 </body>
 </html>
