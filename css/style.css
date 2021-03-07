@@ -1,0 +1,403 @@
+body {
+  font-family: '游ゴシック体', 'Yu Gothic', 'YuGothic', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'sans-serif';
+  font-size: 15px;
+  color: #1e0606;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* headerここから */
+.header_sns_icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header_sns_icons ul {
+  display: flex;
+  justify-content: space-between;
+  width: 101px;
+  margin-top: 24px;
+  margin-right: 29px;
+  margin-bottom: 8px;
+}
+
+.site_header .menu_icon {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1 img {
+  margin-bottom: 48px;
+}
+
+.header_nav ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 42px;
+}
+
+.header_nav ul li {
+  margin-right: 47px;
+}
+
+.header_nav ul li a {
+  font-weight: bold;
+  color: #1e0606;
+  letter-spacing: .15em;
+  text-decoration: none;
+}
+/* headerここまで */
+
+/* main */
+/* section.main_visualここから */
+.main_visual {
+  display: flex;
+}
+
+.main_visual_center img {
+  outline: 2px solid #f9f5ef;
+  outline-offset: -4px;
+}
+
+
+.main_visual_left {
+  position: relative;
+  flex-grow: 1;
+  background: url(../images/main-left-img.png) no-repeat;
+  background-size: cover;
+  opacity: .7;
+}
+
+.main_visual_right {
+  position: relative;
+  flex-grow: 1;
+  background: url(../images/main-right-img.png) no-repeat;
+  background-size: cover;
+  opacity: .7;
+}
+
+.prev_btn, 
+.next_btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev_btn {
+  right: 0;
+}
+
+.next_btn {
+  left: 0;
+}
+/* section.main_visualここまで */
+
+/* section.contentsここから */
+.contents {
+  background: #f3f3f3;
+  padding-top: 50px;
+  padding-bottom: 115px;
+}
+
+.contents .container {
+  display: flex;
+  justify-content: space-between;
+}
+/* articlesここから */
+.article dl {
+  display: flex;
+  margin-bottom: 27px;
+}
+
+.article dt {
+  position: relative;
+}
+
+.article dt img.new {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+.article dd {
+  position: relative;
+  padding: 26px 30px 0 30px;
+  background: #fff;
+}
+
+p.date {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  background: url(../images/icon-time.svg.png) no-repeat center left;
+  margin-top: 7px;
+  padding-left: 20px;
+  margin-bottom: 27px;
+}
+
+.article h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.45;
+  width: 310px;
+}
+
+.article_badge {
+  width: 70px;
+  height: 26px;
+  background: #bfa34c;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  line-height: 26px;
+  position: absolute;
+  top: 26px;
+  right: 30px;
+}
+/* articlesここまで */
+
+/* side_barここから */
+.side_bar img {
+  margin-bottom: 24px;
+}
+
+.side_bar h2 {
+  width: 100%;
+  height: 50px;
+  background: #bfa34c;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+}
+
+.categories ul li{
+  margin-bottom: 1px;
+  background: #ffffff url(../images/arrow.png) no-repeat top 21px right 20px;
+  cursor: pointer;
+}
+
+.contents ul li a {
+  display: block;
+  height: 54px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 54px;
+  text-decoration: none;
+  padding-left: 26px;
+}
+
+/* side_barここまで */
+/* section.contentsここまで */
+
+/* footerここから */
+.site_footer {
+  text-align: center;
+  padding-bottom: 42px;
+  position: relative;
+}
+
+.footer_info {
+  display: flex;
+  justify-content: center;
+  padding-top: 42px;
+  margin-bottom: 62px;
+  position: relative;
+  z-index: 2;
+}
+
+.footer_info h2 img {
+  width: 131px;
+}
+
+.footer_info p {
+  text-align: left;
+  margin-left: 52px;
+}
+
+.footer_nav ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer_nav ul li {
+  transform: skewX(135deg);
+  border-right: 1px solid #eceaea;
+}
+
+.footer_nav ul li:last-child {
+  border-right: none;
+}
+
+.footer_nav ul li a {
+  display: block;
+  transform: skewX(-135deg);
+  font-size: 13px;
+  font-weight: 500;
+  color: #202020;
+  text-decoration: none;
+  padding: 6px 25px;
+}
+
+.site_footer small {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 13px;
+}
+
+.to_pagetop_btn {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -37px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  background: #ffffff;
+}
+
+.to_pagetop_btn img {
+  padding-top: 20px;
+}
+/* footerここまで */
+
+/* メディアクエリここから */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+    overflow: hidden;
+  } 
+
+  .main_visual .container {
+    padding: 0;
+  }
+
+  .site_header {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  h1 img {
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .header_sns_icons ul {
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .header_sns_icons ul li {
+    margin-left: 10px;
+  }
+
+  .menu_icon {
+    display: inline-block!important;
+    color: #1e0606;
+    padding: 3px;
+    margin-left: 5px;
+  }
+
+  .header_nav {
+    display: none;
+  }
+
+  .main_visual_center img {
+    width: 100%;
+    height: auto;
+  }
+
+  .main_visual_left, 
+  .main_visual_right {
+    display: none;
+  }
+
+  .contents {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .contents .container {
+    display: block;
+  }
+
+  .article dl {
+    display: block;
+    margin-bottom: 27px;
+  }
+
+  .article dt img.thumbnail {
+    width: 100%;
+  }
+
+  .article dd {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  p.date {
+    margin-bottom: 20px;
+  }
+
+  .article h3 {
+    width: 100%;
+    font-size: 18px;
+    }
+
+  .article_badge {
+    top: 10px;
+  }
+
+  .side_bar img {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .categories {
+  padding: 0 30px;
+  }
+
+  .contents ul li a {
+  text-align: center;
+  padding: 0;
+  }
+
+  .site_footer { 
+  width: 100%;
+  }
+
+  .footer_info {
+    display: block;
+  }
+
+  .footer_info h2 {
+    margin-bottom: 20px;
+  }
+
+  .footer_info p {
+    text-align: center;
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .footer_nav ul {
+    display: block;
+  }
+}
