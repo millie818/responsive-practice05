@@ -273,11 +273,55 @@ p.date {
 /* footerここまで */
 
 /* メディアクエリここから */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  } 
+
+.main_visual .container {
+  padding: 0;
+}
+
+  .main_visual_center img {
+    width: 100%;
+  }
+
+  .main_visual_left, 
+  .main_visual_right {
+    display: none;
+  }
+
+  .article h3 {
+    max-width: 310px;
+  }
+
+  .side_bar {
+    margin-left: 27px;
+  }
+
+  .contents .side_bar img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 880px) {
+  .article h3 {
+    font-size: 18px;
+    max-width: 240px;
+  }
+
+  
+  .categories ul li a {
+    font-size: 13px;
+    padding-left: 14px;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     width: 100%;
     padding: 0 20px;
-    overflow: hidden;
   } 
 
   .main_visual .container {
