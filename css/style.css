@@ -400,4 +400,14 @@ p.date {
   .footer_nav ul {
     display: block;
   }
+
+  .site_footer .footer_nav li {
+    border-right: none!important;
+    transform: none;
+  }
+
+  .site_footer .footer_nav ul li a {
+    padding: 0;
+    transform: none;
+  }
 }
